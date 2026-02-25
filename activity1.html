@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>JS Strings</h1>
+    <p>Search a string for "string" , display the position of the match and replace the word "how are" with "hew are you" and display.</p>
+    <p id="search"></p>
+    <p id="replace"></p> 
+    <p id="string"></p>
+
+    <script>
+        var str = "hello how are doing for the day";
+        var search_position = str.search("day");
+        var txt = str.replace("how are" , "how are you ")
+        var x = 82;
+        var y = 129;
+        document.getElementById("search").innerHTML = search_position;
+        document.getElementById("replace").innerHTML = txt;
+        document.getElementById("string").innerHTML = String(x) + String(y)
+    </script>
+</body>
+</html>
